@@ -1,0 +1,98 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+
+//===== Header =====
+
+
+
+//===== Header end =====
+
+//===== Welcome =====
+
+
+
+//===== Welcome end =====
+
+//===== Footer =====
+
+
+
+//===== Footer end =====
+
+// ===== Popup =====
+
+
+
+// ===== Popup end =====
+
+// ===== Меню бургер =====
+
+.menu 
+    display: none
+.menu__icon 
+    display: none
+    width: 45px
+    height: 35px
+    position: absolute
+    top: 30px
+    right: 40px
+    cursor: pointer
+.menu__icon span 
+    display: block
+    position: absolute
+    height: 6px
+    width: 100%
+    background: #333
+    border-radius: 9px
+    opacity: 1
+    left: 0
+    transform: rotate(0deg)
+    transition: .15s ease-in-out
+.menu__icon span:nth-child(1) 
+    top: 0px
+.menu__icon span:nth-child(2),
+.menu__icon span:nth-child(3) 
+    top: 13px
+.menu__icon span:nth-child(4) 
+    top: 26px
+.menu.menu_state_open .menu__icon span:nth-child(1) 
+    top: 18px
+    width: 0%
+    left: 50%
+.menu.menu_state_open .menu__icon span:nth-child(2) 
+    transform: rotate(45deg)
+.menu.menu_state_open .menu__icon span:nth-child(3) 
+    transform: rotate(-45deg)
+.menu.menu_state_open .menu__icon span:nth-child(4) 
+    top: 18px
+    width: 0%
+    left: 50%
+.menu.menu_state_open .menu__links 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: flex-end
+    width: 100%
+    margin-top: 90px
+    z-index: 9999
+    position: absolute
+.menu.menu_state_open .menu__links .nav__link a
+    display: flex
+    flex-direction: column
+    font-size: 20px
+    color: #fff
+    margin: 20px
+    text-decoration: none
+.menu.menu_state_open .menu__links .nav__link a:hover
+    color: #3790db
+    transition: .5s
+
+.hidden
+  display: none
+
+@import "media" // Всегда в конце

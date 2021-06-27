@@ -1,0 +1,182 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	.container
+		width: 100%
+	.header
+		height: 100px
+		border: 1px solid black
+		padding: 0 10px
+		&__content
+			height: 100px
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__icons
+			display: none
+		&__logo
+			img
+				width: 200px
+	.welcome
+		background: #f5f5f5
+		h1
+			font-size: 2em
+			font-family: 'raleway-example'
+		&__content
+			padding: 10px
+			height: calc( 100vh - 180px )
+			video
+				width: 100%
+				margin-top: 20px
+	.footer
+		background: #f5f5f5
+		&__content
+			padding: 50px 0 20px 0
+			p
+			text-align: center
+	.popup
+		background: #85848180
+		width: 100%
+		height: 100%
+		margin: 0 auto
+		position: fixed
+		left: 0
+		top: 0
+		animation: popup 1.2s
+		font-family: 'raleway-example'
+		z-index: 1
+		&__content
+			background: #333
+			color: white
+			width: 300px
+			height: auto
+			margin: 120px auto
+			padding: 10px
+		h2
+			margin-top: 30px
+			text-align: center
+		input
+			width: 100%
+			height: 60px
+			text-align: center
+			font-size: 22px
+			margin: 20px 0 10px 0
+			border: none
+			outline: none
+		button
+			width: 100%
+			height: 60px
+			font-size: 22px
+			margin: 10px 0
+			cursor: pointer
+			border: none
+			outline: none
+			color: white
+			background: #31485F
+
+		@keyframes popup
+		0%
+			top: -200px
+			opacity: 0
+
+		30%
+			opacity: .2
+
+		50%
+			top: 50px
+
+		100%
+			top: 0
+			opacity: 1
+		
+	.menu 
+        display: block
+        text-align: right
+        &__icon 
+            display: inline-block
+        &__links 
+            display: none
+            top: 0
+            right: 0
+            left: 0
+            margin-top: 144px
+            overflow: auto
+        .menu_state_open 
+            .menu__links 
+                width: 100%
+                justify-content: center
+                align-items: flex-end
+                position: absolute
+                top: 25px
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	
+	.header
+		&__icons
+			display: block
+	.menu
+			display: none
+	.welcome
+		&__content
+			height: auto
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.container
+		width: 1200px
+		margin: 0 auto
+	.welcome
+		&__content
+			padding: 30px 50px
+			
+			video
+				width: 100%
+				margin-top: 20px
+	/**/
+
