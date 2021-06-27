@@ -8,7 +8,7 @@ $(function () {
     const popupForm = document.querySelector('.popup__form');
     // const inputValue = document.querySelector('.input__email').value;
 
-    player.play();
+    // player.play();
     setTimeout(() => {
         player.pause();
         popup.classList.remove('hidden')
